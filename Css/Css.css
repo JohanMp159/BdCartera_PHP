@@ -1,0 +1,22 @@
+.container{
+	width: 380px;
+	margin: auto;
+	text-align: center;
+	display: block;
+}
+.nav{
+	border-color: 1px solid black; 
+}
+ul{
+	text-align: center;
+	padding: 8px;
+	background: #F3F3F3;
+}
+ul li{
+	padding: 5px;
+	text-align: center;
+	display: inline;
+}
+ul li a{
+	text-decoration: none;
+}

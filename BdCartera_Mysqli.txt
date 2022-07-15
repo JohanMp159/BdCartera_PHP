@@ -1,0 +1,45 @@
+create database cartera
+use cartera
+
+Create Table Cliente
+		(
+			nitocc varchar(11) primary key,
+			razonSocial varchar(30) not null, 
+			direccion varchar(30) not null,
+			telefono varchar(11) not null,
+			cupoCredito varchar(30) not null
+		)
+
+
+Create Table Factura
+		(
+			nroFactura varchar(11) primary key,
+			nitocc varchar(11) not null, 
+			fechaIngreso date not null,
+			formaPago varchar(30) not null,
+			vlrFactura int not null
+			Constraint fknitocc Foreign key(nitocc) References Cliente (nitocc)
+		)
+
+Create Table Pago
+		(
+			nroRecibo varchar(11) primary key,
+			nroFactura varchar(11) not null,
+			Fecha date not null,
+			valorAbono int not null,
+			Constraint fknroFactura Foreign key(nroFactura) References Factura (nroFactura),
+		)
+
+
+
+MOMENTO 3:
+
+ALTER TABLE ****
+add Foto varchar(100)
+
+UPDATE **** SET Foto = '~/foto/persona.jpg' WHERE nitocc ="01"
+
+ALTER TABLE ****
+add Foto varchar(100)
+
+UPDATE **** SET Foto = '~/foto/****.jpg' WHERE **** ="**"

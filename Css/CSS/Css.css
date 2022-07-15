@@ -1,0 +1,60 @@
+body{
+    margin:100px;
+    background: #DEDEDE;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0; 
+}
+
+/*                 ESTILO DEL INDEX:                 ; */
+
+#login{
+    width: 30%;
+    max-width: 500px;
+    background: #F3F3F3;
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2%;
+    margin: auto;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color:rgba(0,0,0,0.5);
+}
+
+#login input{
+    display: block;
+    padding: 5px;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+#login input[type="submit"]{
+    background: linear-gradient(#FFDA63, #FFB940);
+    border: 0;
+    color: brown;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0px;
+}
+#login input[type="submit"]:hover {
+    opacity: 1;
+}
+#login input[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+@media (max-width:768px){
+    #login {
+        width: 75%;
+    }
+}
+@media(max-width:480px){
+    #login {
+        width: 85%;
+    }
+    
+}
